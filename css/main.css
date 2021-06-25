@@ -1,0 +1,429 @@
+/* ---------- Specification ---------- */
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #6c7279;
+    letter-spacing: 0em;
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.4em;
+    color: #6c7279;
+    font-weight: 400;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #2d3033;
+	line-height: 1.6em;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 36px;
+    font-style: italic;
+    color: #fff;
+    font-weight: 400;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 14px;
+    color: #fff;
+}
+
+a, a:hover, a:active {
+	text-decoration: none;
+    color: #fff;
+}
+
+a, button, input {
+	transition: all 0.5s ease;
+}
+
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+
+.container-fluid_plain {
+	padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+	color: #fff;
+    background: #e84545;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    border: 1px solid #fff;
+    box-shadow: 0 0 3px #000 inset;
+}
+
+.btn:active {
+    border: 1px solid #fff;
+    box-shadow: 0 0 6px #000 inset; 
+}
+
+/* ---------- Header ---------- */
+
+.header {
+    background: #0d0c16 url('../img/header.jpg') no-repeat center top / cover;
+    padding-top: 30px;
+    padding-bottom: 243px;
+    color: #fff;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #626fe4;
+    font-weight: 700;
+}
+
+.logo:hover {
+    color: #626fe4;
+}
+
+.menu__item {
+    text-transform: uppercase;
+}
+
+.menu__link {
+    color: #fff;
+    border-bottom: 3px solid transparent;
+}
+
+.menu__link:hover {
+    border-bottom: 3px solid #afaeb0;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+.row__underlined {
+    border-bottom: 1px solid #53535c;
+    padding-bottom: 30px;
+}
+
+.offer__title {
+    color: #fff;
+    margin-top: 180px;
+    margin-bottom: 45px;
+    
+}
+
+.offer__text {
+    font-size: 22px;
+    color: #fff;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.offer__btn {
+    margin-top: 30px;
+    width: 200px;
+}
+
+/* ---------- Section Features ---------- */
+
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.feature {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.feature__title {
+    margin-top: 30px;
+    color: #2d3033;
+}
+
+.feature__text {
+    margin-top: 20px;
+}
+
+.lower-row .feature {
+    margin-bottom: 0;
+}
+
+/* ---------- Section Works ---------- */
+
+.works {
+    padding-bottom: 102px;
+}
+
+.work {
+    margin: 0 auto  25px auto;
+    max-width: 263px;
+    position: relative;
+}
+
+.work__image {
+    display: block;
+}
+
+.work__overlay {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(210, 63, 63, 0.9);
+    opacity: 0;
+    transition: all .5s ease;
+}
+
+.work:hover .work__overlay {
+    opacity: 1;
+}
+
+.work__title {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.work__text {
+    color: #fff;
+}
+
+/* ---------- Section Works ---------- */
+
+.team {
+    background: #f1f2fd;
+    padding: 125px 0 117px;
+}
+
+.member__title {
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: px;
+}
+
+.member__note {
+    font-size: 13px;
+    color: #e84545;
+    text-transform: uppercase;
+}
+
+.member__text {
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+
+.member__network {
+    width: 40px;
+    margin-right: 4px;
+    background: #fff;
+    border: 1px solid #e8ecee;
+    cursor: pointer;
+    text-align: center;
+    padding: 9px 0;
+}
+
+.member__network:hover {
+    background: #e8ecee;
+}
+
+/* ---------- Section Quote ---------- */
+
+.workspace {
+    background: #e3e7ea url('../img/woman.jpg') no-repeat center top / cover;
+    height: 500px;
+}
+
+.true {
+    background: #53354a;
+    padding: 130px 0 100px 68px;
+    width: 100%;
+    margin: 0;
+}
+
+.true__title {
+    max-width: 550px;
+    text-transform: none;
+    line-height: 1.2em;
+    margin-bottom: 35px;
+}
+
+.true__text {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+/* ---------- Section Download ---------- */
+
+.download {
+    padding: 95px 0 100px;
+}
+
+.download__title {
+    text-transform: none;
+}
+
+.download__text {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2d3033;
+}
+
+.download__button {
+    width: 280px;
+    margin-top: 30px;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+    background: #3a3e64;
+    padding: 77px 0 0;
+}
+
+.footer:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 12px;
+    background: #313454;
+    margin-top: 68px;
+}
+
+.footer__text {
+    color: rgba(255, 255, 255, .6);
+}
+
+.footer__text_second {
+    color: #808080;
+}
+
+.footer__text_second span:first-child {
+    color: #e84545;
+}
+
+.footer__text_second span:last-child {
+    color: #fff;
+}
+
+/* ------ Media Queries ------ */
+
+/* 992-1200px */
+@media screen and (max-width: 1199.98px) {
+    .true__title {
+        max-width: 550px;
+        padding-right: 20px;
+    }
+    .workspace {
+        height: 100%;
+    }
+    .logo {
+        
+    }
+}
+
+/* 768-992px */
+@media screen and (max-width: 991.98px) {
+    .workspace {
+        height: 450px;
+    }
+    .member {
+        margin-bottom: 30px;
+    }
+}
+
+/* 576-768px */
+@media screen and (max-width: 767.98px) {
+    .offer__text {
+        max-width: 500px;
+    }
+    .member {
+        text-align: center;
+    }
+    .member__list {
+        justify-content: center;
+    }
+    .member {
+        margin-bottom: 30px;
+    }
+    .footer__text {
+        margin-bottom: 25px;
+    }
+}
+
+/* 320-576px */
+@media screen and (max-width: 575.98px) {
+    .logo {
+        text-align: center;
+    }
+    .offer-text {
+        max-width: 310px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
